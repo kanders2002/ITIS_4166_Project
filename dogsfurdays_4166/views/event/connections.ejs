@@ -1,0 +1,31 @@
+<%- include('../partials/header.ejs')%>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="/css/connections.css">
+</head>
+
+<body>
+    <h1>Dog Meets</h1>
+
+    <%if(events.length) {%>
+        <%events.forEach(event=> {%>
+            <ul class="connectionsul">
+                <li class="connectionsli"><a class="connectionslia" href="/events/<%= event._id%>"><%=event.name%></a></li>
+            </ul>
+        <%});
+    } else {%>
+        <p>There are no events to display.</p>
+    <%}%>
+    
+    <h1>Adoptions</h1>
+    <%if(events.length) {%>
+        <%events.forEach(event=> {%>
+            <ul class="connectionsul">
+                <li class="connectionsli"><a class="connectionslia" href="/events/<%= event._id%>"><%=event.name%></a></li>
+            </ul>
+        <%});
+    } else {%>
+        <p>There are no events to display.</p>
+    <%}%>
+        
+    <%- include('../partials/footer.ejs')%>

@@ -1,0 +1,99 @@
+body {
+    background-color: #F7EDE2;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 0;
+}
+
+h1 {
+    margin-top: 0;
+    padding: 15px;
+    text-align: center;
+    background: #F5CAC3;
+    color: #F28482;
+    font-size: 35px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #84A59D;
+}
+
+li {
+  float: left;
+  
+}
+
+li a {
+    display: block;
+    font-size: 18px;
+    color: #F7EDE2;
+    text-align: right;
+    padding: 18px 20px;
+    text-decoration: none;
+}
+
+.logo {
+    text-align:left;
+	margin-top:0px;
+	float:left; 
+	margin:0px;
+	line-height:50px;
+	padding-left:9px;
+    height: 100px;
+}
+
+p {
+    color: #282622;
+    width: 85%;
+    margin: auto;
+    font-size: 18px;
+}
+
+.puppypark {
+    height: 50%;
+    width: 50%;
+    border: 3px solid #84A59D;
+}
+
+h2 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-align: center;
+    color: #F28482;
+    font-size: 25px;
+}
+
+button {
+    cursor: pointer;
+    background-color: #F5CAC3;
+    color: #F28482;
+    font-size: 15px;
+    border: none;
+    padding: 8px 10px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer {
+    position: relative;
+    z-index: 10;
+    width:100%;
+    padding: 10px;
+    text-align: left;
+    background: #F6BD60;
+    color: #F28482;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+a {
+    color: #F28482;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+}

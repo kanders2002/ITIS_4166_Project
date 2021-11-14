@@ -1,0 +1,24 @@
+<%- include('../partials/header.ejs')%>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="/css/connection.css">
+</head>
+
+<body>
+    <h1><%= event.name%></h1>
+    <img class="puppypark" src="/images/puppypark.png" alt="Puppy Park Pic">
+    <h2><%= event.topic%></h2><br>
+    <p>Hosted by <%= event.hostName%></p><br>
+    <p><%= event.location%></p><br>
+    <p><%= event.date%></p><br>
+    <p><%= event.startTime%> - <%= event.endTime%></p><br>
+    
+    <h2>Details</h2><br>
+    <p><%= event.details%></p><br>
+    
+    <form>
+		<button type="submit" formethod="GET" formaction="/events/<%= event._id%>/edit">Update</button>
+		<button type = "submit" formmethod = "POST" formaction ="/events/<%= event._id%>?_method=DELETE">Delete</button>
+    </form>
+    <br>
+    <%- include('../partials/footer.ejs')%>

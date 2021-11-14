@@ -1,0 +1,43 @@
+<%- include('../partials/header.ejs')%>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="/css/newConnection.css">
+</head>
+
+<body>
+    <h1>New Connection</h1>
+    <form action = '/events' method = 'POST'>
+    <label for="topic"><b>Topic:</b></label><br>
+    <input type="text" name="topic" placeholder="Topic" required><br>
+        
+    <label for="name"><b>Event Name:</b></label><br>
+    <input type="text" name="name" placeholder="Title" required><br>
+    
+    <label for="hostName"><b>Host:</b></label><br>
+    <input type="text" name="hostName" placeholder="Host" required><br>
+    
+    <label for="details"><b>Details:</b></label><br>
+    <textarea id="details" name="details" rows="4" cols="55" required minlength="10">Description</textarea><br>
+
+    <label for="location"><b>Where:</b></label><br>
+    <input type="text" name="location" placeholder="Location" required><br>
+    
+    <label for="date"><b>When:</b></label><br>
+    <input type="date" name="date" required><br>
+    
+    <label for="startTime"><b>Start:</b></label><br>
+    <input type="time" name="startTime" required><br>
+    
+    <label for="endTime"><b>End:</b></label><br>
+    <input type="time" name="endTime" required><br>
+    
+    <label for="image"><b>Image URL:</b></label><br>
+    <input type="text" name="image" placeholder="Image URL" required><br>
+    
+    <a href="../event/connections.ejs">
+		<button>Create Connection</button>
+    </a><br>
+
+</form><br>
+        
+    <%- include('../partials/footer.ejs')%>

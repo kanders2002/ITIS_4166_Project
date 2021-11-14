@@ -1,0 +1,43 @@
+<%- include('../partials/header.ejs')%>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="/css/newConnection.css">
+</head>
+
+<body>
+    <h1>Update Connection</h1>
+    <form method="POST" action="/events/<%= event._id%>?_method=PUT">
+    <label for="topic"><b>Topic:</b></label><br>
+    <input type="text" name="topic" value="<%=event.topic%>" placeholder="Topic" required><br>
+        
+    <label for="name"><b>Event Name:</b></label><br>
+    <input type="text" name="name" value="<%=event.name%>" placeholder="Title" required><br>
+    
+    <label for="hostName"><b>Host:</b></label><br>
+    <input type="text" name="hostName" value="<%=event.hostName%>" placeholder="Host" required><br>
+    
+    <label for="details"><b>Details:</b></label><br>
+    <textarea id="details" name="details" value="<%= event.details%>" rows="4" cols="55" required minlength="10">Description</textarea><br>
+    
+    <label for="location"><b>Where:</b></label><br>
+    <input type="text" name="location" value="<%= event.location%>" placeholder="Location" required><br>
+    
+    <label for="date"><b>When:</b></label><br>
+    <input type="date" name="date" value="<%= event.date%>" required><br>
+    
+    <label for="startTime"><b>Start:</b></label><br>
+    <input type="time" name="startTime" value="<%= event.startTime%>" required><br>
+    
+    <label for="endTime"><b>End:</b></label><br>
+    <input type="time" name="endTime" value="<%= event.endTime%>" required><br>
+    
+    <label for="image"><b>Image URL:</b></label><br>
+    <input type="text" name="image" value="puppypark.png"placeholder="Image URL" required><br>
+    
+    <form>
+		<button>Create Connection</button>
+    </form><br>
+
+</form><br>
+        
+    <%- include('../partials/footer.ejs')%>
