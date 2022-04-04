@@ -1,7 +1,5 @@
 # ITIS_4166_Project
 
-*This project is currently in progress!*
-
 For this project, I designed, implemented, and published a Model-View-Controller (MVC) web application for an event app called Dogs Fur Days.
 
 **Project Description:**
